@@ -5,6 +5,7 @@
 
 (setq default-frame-alist '((fullscreen . maximized)))
 (load-theme 'wombat t)
+(global-display-line-numbers-mode 1)
 
 (use-package magit
   :ensure t
