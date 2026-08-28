@@ -6,6 +6,9 @@
 (setq default-frame-alist '((fullscreen . maximized)))
 (load-theme 'wombat t)
 (global-display-line-numbers-mode 1)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(tooltip-mode -1)
 
 (use-package magit
   :ensure t
