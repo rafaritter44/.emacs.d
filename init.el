@@ -10,6 +10,8 @@
 (menu-bar-mode -1)
 (tooltip-mode -1)
 
+(setq ns-right-option-modifier 'none)
+
 (use-package magit
   :ensure t
   :bind ("C-x g" . magit-status))
