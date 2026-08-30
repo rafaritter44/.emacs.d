@@ -14,7 +14,9 @@
 
 (use-package magit
   :ensure t
-  :bind ("C-x g" . magit-status))
+  :bind ("C-x g" . magit-status)
+  :config
+  (add-hook 'after-save-hook 'magit-after-save-refresh-status t))
 (use-package markdown-mode
   :ensure t
   :mode "\\.md\\'")
