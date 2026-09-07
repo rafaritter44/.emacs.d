@@ -20,3 +20,8 @@
 (use-package markdown-mode
   :ensure t
   :mode "\\.md\\'")
+
+(setq org-confirm-babel-evaluate nil)
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((shell . t)))
