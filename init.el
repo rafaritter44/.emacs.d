@@ -11,6 +11,8 @@
 (tooltip-mode -1)
 
 (setq ns-right-option-modifier 'none)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
 
 (use-package magit
   :ensure t
