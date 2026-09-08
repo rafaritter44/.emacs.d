@@ -14,6 +14,9 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
 (use-package magit
   :ensure t
   :bind ("C-x g" . magit-status)
@@ -22,6 +25,9 @@
 (use-package markdown-mode
   :ensure t
   :mode "\\.md\\'")
+(use-package docker
+  :ensure t
+  :bind ("C-c d" . docker))
 
 (setq org-confirm-babel-evaluate nil)
 (org-babel-do-load-languages
