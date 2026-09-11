@@ -22,15 +22,15 @@
   :bind ("C-x g" . magit-status)
   :config
   (add-hook 'after-save-hook 'magit-after-save-refresh-status t))
+(use-package docker
+  :ensure t
+  :bind ("C-c d" . docker))
 (use-package markdown-mode
   :ensure t
   :mode "\\.md\\'")
 (use-package yaml-mode
   :ensure t
   :mode ("\\.yml\\'" "\\.yaml\\'"))
-(use-package docker
-  :ensure t
-  :bind ("C-c d" . docker))
 
 (setq org-confirm-babel-evaluate nil)
 (org-babel-do-load-languages
