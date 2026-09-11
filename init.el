@@ -25,6 +25,9 @@
 (use-package markdown-mode
   :ensure t
   :mode "\\.md\\'")
+(use-package yaml-mode
+  :ensure t
+  :mode ("\\.yml\\'" "\\.yaml\\'"))
 (use-package docker
   :ensure t
   :bind ("C-c d" . docker))
