@@ -14,6 +14,9 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
+(setq global-auto-revert-non-file-buffers t)
+(global-auto-revert-mode 1)
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
