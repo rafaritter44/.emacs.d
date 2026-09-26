@@ -39,3 +39,13 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((shell . t)))
+
+(use-package haskell-mode
+  :ensure t)
+(use-package eglot
+  :ensure t
+  :config
+  (add-hook 'haskell-mode-hook 'eglot-ensure)
+  :custom
+  (eglot-autoshutdown t)
+  (eglot-confirm-server-initiated-edits nil))
