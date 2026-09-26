@@ -11,6 +11,7 @@
 (tooltip-mode -1)
 
 (setq ns-right-option-modifier 'none)
+(define-key key-translation-map (kbd "æ") (kbd "|"))
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
