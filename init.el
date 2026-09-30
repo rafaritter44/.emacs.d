@@ -18,6 +18,8 @@
 (setq global-auto-revert-non-file-buffers t)
 (global-auto-revert-mode 1)
 
+(setq project-vc-extra-root-markers '(".project"))
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
