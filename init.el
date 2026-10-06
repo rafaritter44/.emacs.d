@@ -23,6 +23,10 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
+(use-package vertico
+  :ensure t
+  :init
+  (vertico-mode))
 (use-package magit
   :ensure t
   :bind ("C-x g" . magit-status)
