@@ -27,6 +27,13 @@
   :ensure t
   :init
   (vertico-mode))
+(use-package orderless
+  :ensure t
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-overrides '((file (styles partial-completion))))
+  (completion-category-defaults nil)
+  (completion-pcm-leading-wildcard t))
 (use-package magit
   :ensure t
   :bind ("C-x g" . magit-status)
