@@ -34,6 +34,15 @@
   (completion-category-overrides '((file (styles partial-completion))))
   (completion-category-defaults nil)
   (completion-pcm-leading-wildcard t))
+(use-package corfu
+  :ensure t
+  :init
+  (global-corfu-mode)
+  :custom
+  (corfu-auto t)
+  (corfu-auto-prefix 2)
+  (corfu-auto-delay 0.2)
+  (corfu-cycle t))
 (use-package magit
   :ensure t
   :bind ("C-x g" . magit-status)
