@@ -40,7 +40,7 @@
   (global-corfu-mode)
   :custom
   (corfu-auto t)
-  (corfu-auto-prefix 2)
+  (corfu-auto-prefix 1)
   (corfu-auto-delay 0.2)
   (corfu-cycle t))
 (use-package magit
